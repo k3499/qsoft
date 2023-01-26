@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+}
+/*header*/
+
+.header {
+  background: #fff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+.header__wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__search {
+  display: none;
+}
+.user-mob {
+  display: none;
+}
+/*logo*/
+
+.logo {
+  background: url(https://datagame.su/wp-content/uploads/2023/01/logo.svg)
+    no-repeat;
+  text-indent: 99999px;
+  overflow: hidden;
+  width: 136px;
+  height: 31px;
+}
+/*search*/
+.search {
+  box-sizing: border-box;
+  background: url(https://datagame.su/wp-content/uploads/2023/01/Search.svg)
+    no-repeat 10px 50%;
+  height: 40px;
+  text-indent: 39px;
+  border: 1px solid #ebebf1;
+  border-radius: 5px;
+  flex-grow: 1;
+}
+.search_header {
+  margin: 0 60px;
+}
+.search:focus-visible {
+  outline: 1px solid #e8e8eb;
+}
+.search_header {
+}
+/*user*/
+.user {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  border-left: 1px solid #ebebf1;
+  height: 100%;
+}
+.user__name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: right;
+  letter-spacing: 0.01em;
+  color: #768298;
+  margin: 0 10px 0 0;
+  padding-left: 20px;
+}
+.user__avatar {
+  width: 40px;
+  height: 40px;
+  background: url(https://datagame.su/wp-content/uploads/2023/01/avatar.svg)
+    no-repeat;
+  border-radius: 45%;
+}
+/*wrapper*/
+
+.wrapper {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 70px 0;
+}
+
+/*title*/
+
+.title {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #121920;
+  margin: 0 0 30px;
+}
+
+/*partners*/
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+}
+.partners__item {
+  display: block;
+  box-sizing: border-box;
+  margin-right: 30px;
+  margin-top: 30px;
+  width: calc(100% / 4 - 90px / 4);
+  height: 120px;
+  border: 1px solid #ebebf1;
+  border-radius: 5px;
+}
+.partners__item:hover {
+  box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1),
+    0px 0px 10px rgba(164, 164, 164, 0.03);
+}
+.partners__henkel {
+  background: url(https://datagame.su/wp-content/uploads/2023/01/henkel.svg)
+    no-repeat 50%;
+  background-size: 90%;
+}
+.partners__deere {
+  background: url(https://datagame.su/wp-content/uploads/2023/01/deere.svg)
+    no-repeat 50%;
+  background-size: 90%;
+}
+.partners__mc {
+  background: url(https://datagame.su/wp-content/uploads/2023/01/mc.svg)
+    no-repeat 50%;
+  background-size: 90%;
+}
+.partners__ikea {
+  background: url(https://datagame.su/wp-content/uploads/2023/01/ikea.svg)
+    no-repeat 50%;
+  background-size: 90%;
+}
+.partners__reebok {
+  background: url(https://datagame.su/wp-content/uploads/2023/01/reebok.svg)
+    no-repeat 50%;
+  background-size: 90%;
+}
+.partners__nike {
+  background: url(https://datagame.su/wp-content/uploads/2023/01/nike.svg)
+    no-repeat 50%;
+  background-size: 90%;
+}
+.partners__cat {
+  background: url(https://datagame.su/wp-content/uploads/2023/01/cat.svg)
+    no-repeat 50%;
+  background-size: 90%;
+}
+.partners__item:nth-child(4n) {
+  margin-right: 0;
+}
+.partners__item:nth-child(-n + 4) {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 360px) and (max-width: 1240px) {
+  .wrapper {
+    padding: 70px 20px 70px;
+  }
+  .header__wrapper {
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .search_header {
+    margin: 0 50px;
+  }
+  .partners__item {
+    margin-right: 20px;
+    margin-top: 20px;
+    width: calc(100% / 3 - 40px / 3);
+  }
+  .partners__item:nth-child(4n) {
+    margin-right: 20px;
+  }
+  .partners__item:nth-child(-n + 4) {
+    margin-top: 20px;
+  }
+  .partners__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .partners__item:nth-child(-n + 3) {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  .user {
+    display: none;
+  }
+  .user-mob {
+    display: block;
+    background: url(https://datagame.su/wp-content/uploads/2023/01/user.svg)
+      no-repeat;
+    text-indent: 99999px;
+    overflow: hidden;
+    width: 25px;
+    height: 25px;
+  }
+  .header__search {
+    display: block;
+    border-top: 1px solid rgba(187, 196, 214, 0.5);
+  }
+  .search {
+    background: url(https://datagame.su/wp-content/uploads/2023/01/Search.svg)
+      no-repeat 20px 50%;
+    color: #bbc4d6;
+    text-indent: 49px;
+    width: 100%;
+    border-radius: 0px;
+    border: 0;
+  }
+  .search::placeholder {
+    color: #bbc4d6;
+  }
+  .search_header {
+    display: none;
+  }
+  .partners__item {
+    margin-right: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: 140px;
+  }
+  .partners__item:nth-child(4n) {
+    margin-right: 0;
+  }
+  .partners__item:nth-child(-n + 4) {
+    margin-top: 20px;
+  }
+  .partners__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .partners__item:nth-child(-n + 1) {
+    margin-top: 0;
+  }
+}
